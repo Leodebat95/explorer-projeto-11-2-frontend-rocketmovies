@@ -54,11 +54,10 @@ export const Form = styled.form`
  
   a {
     align-self: center;
+    margin-top: 42px;
   }
 
   #button-text {
-    margin-top: 42px;
-
     font-size: 16px;
     font-weight: 400;
     color: ${({ theme }) => theme.COLORS.PINK};

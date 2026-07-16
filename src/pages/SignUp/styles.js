@@ -46,27 +46,33 @@ export const Form = styled.form`
     justify-content: center;
   }
 
-  a {
+  #alink-signup {
     width: 100%;
+    margin-top: 16px;
     align-self: center;
+
+    > a {
+      margin-top: 0;
+    }
   }
 
-  #button-text {
-    width: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-
+  #alink-to-signin {
+    align-self: center;
     margin-top: 42px;
 
-    font-size: 16px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.COLORS.PINK};
+    #button-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
 
-    > svg {
-      transform: scale(1.1);
+      font-size: 16px;
+      font-weight: 400;
+      color: ${({ theme }) => theme.COLORS.PINK};
+
+      > svg {
+        transform: scale(1.1);
+      }
     }
   }
 `

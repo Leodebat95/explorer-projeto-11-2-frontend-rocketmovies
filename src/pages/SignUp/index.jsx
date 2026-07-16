@@ -76,12 +76,12 @@ export function SignUp() {
           onChange={event => setPassword(event.target.value)}
         />
 
-        <Link>
+        <Link id="alink-signup">
           <Button title="Cadastrar" onClick={handleSignUp} />
         </Link>
 
-        <Link to="/">
-          <ButtonText title="Voltar para o login" icon={FiArrowLeft}/>
+        <Link to="/" id="alink-to-signin">
+          <ButtonText title="Voltar para o login" icon={FiArrowLeft} />
         </Link>
       </Form>
 
